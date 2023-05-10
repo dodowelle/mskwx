@@ -1,0 +1,28 @@
+{
+	"pages": [{
+		"path": "pages/index/index",
+		"needLogin": false,
+		"test": 123,
+		"style": {
+			"navigationBarTitleText": "uni-app"
+		}
+	}, {
+		"path": "pages/realList/realList",
+		"style": {
+			"navigationBarTitleText": "实时看板",
+			"enablePullDownRefresh": false
+		}
+
+	}],
+	"globalStyle": {
+		"autoscan": true,
+		"navigationStyle": "custom",
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {
+			"background": "#efeff4"
+		}
+	}
+}
