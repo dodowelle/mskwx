@@ -1,0 +1,50 @@
+/* 水平间距 */
+/* 水平间距 */
+.select2.data-v-5a87a93b {
+  width: 700rpx;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.select2 .selin.data-v-5a87a93b {
+  width: 180rpx;
+}
+.select2.data-v-5a87a93b .uni-select {
+  border: none;
+  padding-left: 0;
+}
+.gap.data-v-5a87a93b {
+  width: 2rpx;
+  height: 40rpx;
+  background-color: #ccc;
+  display: inline-block;
+  margin: 0 24rpx;
+}
+.content.data-v-5a87a93b {
+  background-color: #f5f6fa;
+}
+.switch_gap.data-v-5a87a93b {
+  padding: 28rpx 24rpx;
+  display: flex;
+}
+.switch_gap .text.data-v-5a87a93b {
+  margin-right: 12rpx;
+}
+.c_tip.data-v-5a87a93b {
+  width: 670rpx;
+  height: 64rpx;
+  background: #FAFAFC;
+  line-height: 64rpx;
+  padding: 0 16rpx;
+}
+.c_tip .red.data-v-5a87a93b {
+  color: #D92B34;
+  font-weight: bold;
+}
+.c_tip .black.data-v-5a87a93b {
+  color: #000;
+  font-weight: bold;
+}
+.c_tip .num.data-v-5a87a93b {
+  color: rgba(0, 0, 0, 0.85);
+}

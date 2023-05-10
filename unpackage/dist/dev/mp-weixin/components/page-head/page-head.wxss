@@ -1,4 +1,7 @@
 
+.pagehead.data-v-e80b2f0b {
+		z-index: 999;
+}
 .nav_menu.data-v-e80b2f0b {
 		display: flex;
 		align-items: center;
@@ -14,7 +17,7 @@
 }
 .nav_logo.data-v-e80b2f0b {
 		display: flex;
-		padding:  48rpx;
+		padding: 48rpx;
 		margin-top: 40rpx;
 		box-shadow: 0rpx 4rpx 8rpx 0rpx rgba(0,0,0,0.08);
 }
@@ -23,8 +26,8 @@
 		height: 80rpx;
 }
 .nav_logo_text.data-v-e80b2f0b {
-		font-size: 32rpx;
-		margin-left: 6rpx;
+		font-size: 36rpx;
+		margin-left: 20rpx;
 		line-height: 80rpx;
 }
 .nav_inner.data-v-e80b2f0b {

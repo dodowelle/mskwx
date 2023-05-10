@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/realList/realList"
+    "pages/realList/realList",
+    "pages/businessTarget/businessTarget"
   ],
   "window": {
     "autoscan": true,

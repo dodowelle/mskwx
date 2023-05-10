@@ -23,14 +23,15 @@ const _sfc_main = {
   },
   computed: {
     isActive() {
-      return store.clickedNav == this.item.meta.title;
+      return store.clickedNav === this.item.meta.title;
     },
     isActiveItem() {
-      return store.activeItem == this.item.meta.title;
+      return store.activeItem === this.item.meta.title;
     }
   },
   methods: {
     handClick(item) {
+      console.log("handClick", item.name);
       if (store.clickedNav === item.meta.title) {
         store.setClickedNav("");
       } else {
@@ -38,10 +39,15 @@ const _sfc_main = {
       }
     },
     handClick2(item) {
-      store.setActiveItem(item.meta.title);
-      common_vendor.index.navigateTo({
-        url: item.path
-      });
+      console.log("handClick2", item.name);
+      if (store.activeItem === this.item.meta.title)
+        ;
+      else {
+        store.setActiveItem(item.meta.title);
+        common_vendor.index.navigateTo({
+          url: item.path
+        });
+      }
     },
     hasShowingChild(children = [], parent) {
       if (!children) {
@@ -83,7 +89,7 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   }, $props.item.children && $options.isActive ? {
     n: common_vendor.f($props.item.children, (child, ind, i0) => {
       return {
-        a: child.key,
+        a: ind,
         b: "9be3e92c-0-" + i0,
         c: common_vendor.p({
           item: child
@@ -94,5 +100,5 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     o: common_vendor.n($options.isActive ? "active" : "")
   }) : {});
 }
-const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-9be3e92c"], ["__file", "E:/workspace/MeiShiKai_wx/components/page-head/siderbarItem.vue"]]);
+const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-9be3e92c"], ["__file", "E:/MeiShiKai_wx/components/page-head/siderbarItem.vue"]]);
 wx.createComponent(Component);

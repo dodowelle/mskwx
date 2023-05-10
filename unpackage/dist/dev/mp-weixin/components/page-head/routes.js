@@ -18,7 +18,7 @@ const routes = [
       path: "/pages/index/index",
       hidden: false,
       meta: {
-        title: "门店选择1",
+        title: "选择门店",
         icon: ""
       }
     }]
@@ -38,6 +38,15 @@ const routes = [
         hidden: false,
         meta: {
           title: "实时看板",
+          icon: ""
+        }
+      },
+      {
+        name: "BusinessTarget",
+        path: "/pages/businessTarget/businessTarget",
+        hidden: false,
+        meta: {
+          title: "目标看板",
           icon: ""
         }
       }

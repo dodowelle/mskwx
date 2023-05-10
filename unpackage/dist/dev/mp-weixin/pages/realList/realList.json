@@ -5,6 +5,7 @@
     "page-head": "../../components/page-head/page-head",
     "uni-data-picker": "../../uni_modules/uni-data-picker/components/uni-data-picker/uni-data-picker",
     "uni-data-select": "../../uni_modules/uni-data-select/components/uni-data-select/uni-data-select",
-    "qiun-data-charts": "../../uni_modules/qiun-data-charts/components/qiun-data-charts/qiun-data-charts"
+    "real-look": "./component/realLook",
+    "real-rank": "./component/realRank"
   }
 }

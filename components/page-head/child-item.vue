@@ -82,7 +82,7 @@
 		height: 80rpx;
 		line-height: 80rpx;
 		color: #333;
-		padding: 0 20rpx;
+		padding: 0 20rpx 0 60rpx;
 		position: relative;
 		&.active {
 			color: $active_color;
@@ -102,20 +102,19 @@
 	
 	.nav_item .iconfont {font-size: 32rpx;}
 	
-	.nest-menu {
-		padding-left: 40rpx;
-	}
+	
 	
 	.icon_active {
 		color: $active_color;
 	}
 	
 	.nav_wrap {
-		padding: 20rpx;
+		padding: 0;
 		font-size: 28rpx;
 		&.active {
 			background: #FFF6F6;
 			border-radius: 16rpx;
 		}
 	}
+	
 </style>

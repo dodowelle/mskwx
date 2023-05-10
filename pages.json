@@ -1,19 +1,28 @@
 {
-	"pages": [{
-		"path": "pages/index/index",
-		"needLogin": false,
-		"test": 123,
-		"style": {
-			"navigationBarTitleText": "uni-app"
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"needLogin": false,
+			"test": 123,
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		{
+			"path": "pages/realList/realList",
+			"style": {
+				"navigationBarTitleText": "实时看板",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/businessTarget/businessTarget",
+			"style": {
+				"navigationBarTitleText": "目标看板",
+				"enablePullDownRefresh": false
+			}
 		}
-	}, {
-		"path": "pages/realList/realList",
-		"style": {
-			"navigationBarTitleText": "实时看板",
-			"enablePullDownRefresh": false
-		}
-
-	}],
+	],
 	"globalStyle": {
 		"autoscan": true,
 		"navigationStyle": "custom",
@@ -23,6 +32,12 @@
 		"backgroundColor": "#F8F8F8",
 		"app-plus": {
 			"background": "#efeff4"
+		}
+	},
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"fui-(.*)": "@/components/firstui/fui-$1/fui-$1.vue"
 		}
 	}
 }

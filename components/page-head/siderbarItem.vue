@@ -14,7 +14,7 @@
 		<template v-if="item.children && isActive">
 			<child-item 
 				v-for="(child, ind) in item.children"
-				:key="child.key"
+				:key="ind"
 				:item="child"
 				class="nest-menu"
 			 />
@@ -48,14 +48,15 @@
 		},
 		computed : {
 			isActive () {
-				return store.clickedNav == this.item.meta.title
+				return store.clickedNav === this.item.meta.title
 			},
 			isActiveItem () {
-				return store.activeItem == this.item.meta.title
+				return store.activeItem === this.item.meta.title
 			}
 		},
 		methods: {
 			handClick (item) {
+				console.log('handClick', item.name)
 				if(store.clickedNav === item.meta.title) {
 					store.setClickedNav('')
 				} else {
@@ -63,10 +64,15 @@
 				}
 			},
 			handClick2 (item) {
-				store.setActiveItem(item.meta.title)
-				uni.navigateTo({
-					url:item.path
-				}) 
+				console.log('handClick2', item.name)
+				if(store.activeItem === this.item.meta.title) {
+					
+				} else {
+					store.setActiveItem(item.meta.title)
+					uni.navigateTo({
+						url:item.path
+					}) 
+				}
 			},
 			hasShowingChild(children = [], parent) {
 				if (!children) {

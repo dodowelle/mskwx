@@ -19,10 +19,12 @@
 	/* #ifndef APP-NVUE */
 	@import '@/static/customicons.css';
 	@import '@/assets/iconfont/iconfont.css';
+	@import '@/assets/styles/variable.scss';
 	@import '@/assets/styles/common.scss';
 	// 设置整个项目的背景色
 	page {
 		background-color: #f5f5f5;
+		box-sizing: content-box;
 	}
 
 	/* #endif */

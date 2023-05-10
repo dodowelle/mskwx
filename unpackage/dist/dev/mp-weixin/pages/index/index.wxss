@@ -14,23 +14,24 @@
   padding: 24rpx;
 }
 .list .org_icon {
-  width: 34rpx;
-  height: 34rpx;
+  width: 36rpx;
+  height: 36rpx;
 }
 .list .org_name {
   font-size: 28rpx;
-  margin-left: 4rpx;
+  margin-left: 8rpx;
 }
 .list .org_btn {
   width: -webkit-fit-content;
   width: fit-content;
   display: inline-block;
   height: 48rpx;
-  line-height: 46rpx;
+  line-height: 44rpx;
   border-radius: 4rpx;
   opacity: 1;
   border: 1rpx solid rgba(0, 0, 0, 0.45);
   color: rgba(0, 0, 0, 0.45);
+  background-color: #fff;
   font-size: 24rpx;
   padding: 0 24rpx;
   margin-left: 16rpx;
@@ -41,4 +42,25 @@
 }
 .list .org_btn::after {
   border: none;
+}
+.footerbar {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 108rpx;
+  background: #FFFFFF;
+  box-shadow: 0rpx -8rpx 16rpx 0rpx rgba(204, 204, 204, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.footerbar_btn {
+  width: 331rpx;
+  height: 80rpx;
+  background: #F2F2F2;
+  border-radius: 4rpx 4rpx 4rpx 4rpx;
+  font-size: 28rpx;
+  line-height: 80rpx;
+  text-align: center;
 }

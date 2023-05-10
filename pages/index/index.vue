@@ -11,19 +11,42 @@
 					<text class="org_name">{{item}}</text>
 				</view>
 				<view>
-					<button class="org_btn">查看下级</button>
+					<button class="org_btn" @click="shoDrawer">查看下级</button>
 					<button class="org_btn active">选择</button>
 				</view>
 			</view>
 		</view>
+		<uni-drawer ref="showRight" mode="right" :width="screenWidth" :mask-click="true">
+			<view>
+				<next-orgit />
+				<view class="footerbar">
+					<view class="footerbar_btn" @click="selectAll">全部门店</view>	
+					<view class="footerbar_btn" @click="goBack">返回上级</view>	
+				</view>
+			</view>
+		</uni-drawer>
 	</view>
 </template>
 
 <script setup>
-import {ref} from 'vue';
+import {ref, getCurrentInstance} from 'vue';
+const cns = getCurrentInstance();
+
+const screenWidth = uni.getWindowInfo().screenWidth;
 const orgList = ref(['运营组一','运营组二','运营组三','运营组四']);
 const search = (val) => {
 	console.log('search', val)
+}
+
+const shoDrawer = () => {
+	console.log(666,cns)
+	cns.refs['showRight'].open()
+}
+const selectAll = () => {
+	cns.refs['showRight'].close()
+}
+const goBack = () => {
+	cns.refs['showRight'].close()
 }
 </script>
 
@@ -43,22 +66,23 @@ const search = (val) => {
 			padding: 24rpx;
 		}
 		.org_icon {
-			width: 34rpx;
-			height: 34rpx;
+			width: 36rpx;
+			height: 36rpx;
 		}
 		.org_name {
 			font-size: 28rpx;
-			margin-left: 4rpx;
+			margin-left: 8rpx;
 		}
 		.org_btn {
 			width: fit-content;
 			display: inline-block;
 			height: 48rpx;
-			line-height: 46rpx;
+			line-height: 44rpx;
 			border-radius: 4rpx;
 			opacity: 1;
 			border: 1rpx solid rgba(0,0,0,0.45);
 			color: rgba(0,0,0,0.45);
+			background-color: #fff;
 			font-size: 24rpx;
 			padding: 0 24rpx;
 			margin-left: 16rpx;
@@ -70,5 +94,26 @@ const search = (val) => {
 				border: none;
 			}
 		}
+	}
+	.footerbar {
+		width: 100%;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		height: 108rpx;
+		background: #FFFFFF;
+		box-shadow: 0rpx -8rpx 16rpx 0rpx rgba(204,204,204,0.2);
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+	.footerbar_btn {
+		width: 331rpx;
+		height: 80rpx;
+		background: #F2F2F2;
+		border-radius: 4rpx 4rpx 4rpx 4rpx;
+		font-size: 28rpx;
+		line-height: 80rpx;
+		text-align: center;
 	}
 </style>

@@ -17,10 +17,11 @@
       "outputPath": ""
     },
     "condition": false,
+    "ignoreDevUnusedFiles": false,
     "ignoreUploadUnusedFiles": false
   },
   "compileType": "miniprogram",
-  "libVersion": "2.25.3",
+  "libVersion": "2.31.1",
   "appid": "wx5ab4c7a56947767f",
   "projectname": "MeiShiKai_wx",
   "condition": {},

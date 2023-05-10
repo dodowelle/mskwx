@@ -88,5 +88,5 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     })
   };
 }
-const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-e80b2f0b"], ["__file", "E:/workspace/MeiShiKai_wx/components/page-head/page-head.vue"]]);
+const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-e80b2f0b"], ["__file", "E:/MeiShiKai_wx/components/page-head/page-head.vue"]]);
 wx.createComponent(Component);

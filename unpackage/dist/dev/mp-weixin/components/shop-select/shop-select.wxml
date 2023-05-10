@@ -1,0 +1,1 @@
+<view class="select_wrapper data-v-2d2ecdae"><image class="store_icon data-v-2d2ecdae" src="{{a}}" mode="aspectFill"></image><uni-data-picker wx:if="{{d}}" class="data-v-2d2ecdae" bindchange="{{b}}" u-i="2d2ecdae-0" bind:__l="__l" bindupdateModelValue="{{c}}" u-p="{{d}}"></uni-data-picker></view>

@@ -2,6 +2,8 @@
   "navigationBarTitleText": "uni-app",
   "usingComponents": {
     "page-head": "../../components/page-head/page-head",
-    "uni-search-bar": "../../uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar"
+    "uni-search-bar": "../../uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar",
+    "next-orgit": "../../components/next-orgit/next-orgit",
+    "uni-drawer": "../../uni_modules/uni-drawer/components/uni-drawer/uni-drawer"
   }
 }

@@ -7874,6 +7874,13 @@ const pages = [
       navigationBarTitleText: "实时看板",
       enablePullDownRefresh: false
     }
+  },
+  {
+    path: "pages/businessTarget/businessTarget",
+    style: {
+      navigationBarTitleText: "目标看板",
+      enablePullDownRefresh: false
+    }
   }
 ];
 const globalStyle = {
@@ -7887,9 +7894,16 @@ const globalStyle = {
     background: "#efeff4"
   }
 };
+const easycom = {
+  autoscan: true,
+  custom: {
+    "fui-(.*)": "@/components/firstui/fui-$1/fui-$1.vue"
+  }
+};
 const t = {
   pages,
-  globalStyle
+  globalStyle,
+  easycom
 };
 function n(e2) {
   return e2 && e2.__esModule && Object.prototype.hasOwnProperty.call(e2, "default") ? e2.default : e2;
@@ -10409,6 +10423,7 @@ exports.createSSRApp = createSSRApp;
 exports.defineStore = defineStore;
 exports.e = e;
 exports.f = f$1;
+exports.getCurrentInstance = getCurrentInstance;
 exports.index = index;
 exports.initVueI18n = initVueI18n;
 exports.n = n$1;
@@ -10416,7 +10431,10 @@ exports.o = o$1;
 exports.onMounted = onMounted;
 exports.p = p$1;
 exports.r = r$1;
+exports.reactive = reactive;
 exports.ref = ref;
 exports.resolveComponent = resolveComponent;
 exports.sr = sr;
 exports.t = t$1;
+exports.toRefs = toRefs;
+exports.unref = unref;

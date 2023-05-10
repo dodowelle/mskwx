@@ -6,7 +6,7 @@
   height: 80rpx;
   line-height: 80rpx;
   color: #333;
-  padding: 0 20rpx;
+  padding: 0 20rpx 0 60rpx;
   position: relative;
 }
 .nav_item.active.data-v-7234348b {
@@ -24,14 +24,11 @@
 .nav_item .iconfont.data-v-7234348b {
   font-size: 32rpx;
 }
-.nest-menu.data-v-7234348b {
-  padding-left: 40rpx;
-}
 .icon_active.data-v-7234348b {
   color: #D92B34;
 }
 .nav_wrap.data-v-7234348b {
-  padding: 20rpx;
+  padding: 0;
   font-size: 28rpx;
 }
 .nav_wrap.active.data-v-7234348b {

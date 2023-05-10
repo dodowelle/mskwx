@@ -5,16 +5,16 @@ if (!Array) {
   const _easycom_page_head2 = common_vendor.resolveComponent("page-head");
   const _easycom_uni_data_picker2 = common_vendor.resolveComponent("uni-data-picker");
   const _easycom_uni_data_select2 = common_vendor.resolveComponent("uni-data-select");
-  const _easycom_qiun_data_charts2 = common_vendor.resolveComponent("qiun-data-charts");
-  (_easycom_page_head2 + _easycom_uni_data_picker2 + _easycom_uni_data_select2 + _easycom_qiun_data_charts2)();
+  (_easycom_page_head2 + _easycom_uni_data_picker2 + _easycom_uni_data_select2)();
 }
 const _easycom_page_head = () => "../../components/page-head/page-head.js";
 const _easycom_uni_data_picker = () => "../../uni_modules/uni-data-picker/components/uni-data-picker/uni-data-picker.js";
 const _easycom_uni_data_select = () => "../../uni_modules/uni-data-select/components/uni-data-select/uni-data-select.js";
-const _easycom_qiun_data_charts = () => "../../uni_modules/qiun-data-charts/components/qiun-data-charts/qiun-data-charts.js";
 if (!Math) {
-  (_easycom_page_head + _easycom_uni_data_picker + _easycom_uni_data_select + _easycom_qiun_data_charts)();
+  (_easycom_page_head + _easycom_uni_data_picker + _easycom_uni_data_select + realLook + realRank)();
 }
+const realLook = () => "./component/realLook.js";
+const realRank = () => "./component/realRank.js";
 const _sfc_main = {
   __name: "realList",
   setup(__props) {
@@ -64,33 +64,8 @@ const _sfc_main = {
     const handlePanel = (val) => {
       console.log(val);
     };
-    const handleDate = (val) => {
-    };
-    const activeInt = common_vendor.ref(0);
-    const chooseType = (index) => {
-      activeInt.value = index;
-    };
-    const chartData = common_vendor.ref({});
-    common_vendor.onMounted(() => {
-      setTimeout(() => {
-        let res = {
-          categories: ["2016", "2017", "2018", "2019", "2020", "2021"],
-          series: [
-            {
-              name: "目标值",
-              data: [35, 36, 31, 33, 13, 34]
-            },
-            {
-              name: "完成量",
-              data: [18, 27, 21, 24, 6, 28]
-            }
-          ]
-        };
-        chartData.value = JSON.parse(JSON.stringify(res));
-      }, 200);
-    });
     return (_ctx, _cache) => {
-      return {
+      return common_vendor.e({
         a: common_vendor.p({
           title: "实时看板"
         }),
@@ -119,7 +94,7 @@ const _sfc_main = {
           clear: false,
           modelValue: panel.value
         }),
-        j: common_vendor.o(handleDate),
+        j: common_vendor.o(_ctx.handleDate),
         k: common_vendor.o(($event) => dataScope.value = $event),
         l: common_vendor.p({
           localdata: dateTypeItems.value,
@@ -127,27 +102,10 @@ const _sfc_main = {
           clear: false,
           modelValue: dataScope.value
         }),
-        m: common_vendor.f(["商户实收", "营业额", "有效订单", "单均商户实收", "到手率"], (item, k0, i0) => {
-          return {
-            a: common_vendor.t(item),
-            b: item
-          };
-        }),
-        n: common_vendor.f(["分时", "累计"], (item, index, i0) => {
-          return {
-            a: common_vendor.t(item),
-            b: common_vendor.n(activeInt.value === index ? "active" : ""),
-            c: index,
-            d: common_vendor.o(($event) => chooseType(index), index)
-          };
-        }),
-        o: common_vendor.p({
-          type: "column",
-          chartData: chartData.value
-        })
-      };
+        m: activeIndex.value === 0
+      }, activeIndex.value === 0 ? {} : {});
     };
   }
 };
-const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__scopeId", "data-v-25327907"], ["__file", "E:/workspace/MeiShiKai_wx/pages/realList/realList.vue"]]);
+const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__scopeId", "data-v-25327907"], ["__file", "E:/MeiShiKai_wx/pages/realList/realList.vue"]]);
 wx.createPage(MiniProgramPage);

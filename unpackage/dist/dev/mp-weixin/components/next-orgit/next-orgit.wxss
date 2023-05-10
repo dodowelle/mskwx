@@ -1,0 +1,45 @@
+/* 水平间距 */
+/* 水平间距 */
+.container {
+  padding: 0;
+  font-size: 14rpx;
+  line-height: 24rpx;
+  background-color: #fff;
+  height: 100vh;
+}
+.list .list_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24rpx;
+}
+.list .org_icon {
+  width: 36rpx;
+  height: 36rpx;
+}
+.list .org_name {
+  font-size: 28rpx;
+  margin-left: 8rpx;
+}
+.list .org_btn {
+  width: -webkit-fit-content;
+  width: fit-content;
+  display: inline-block;
+  height: 48rpx;
+  line-height: 44rpx;
+  border-radius: 4rpx;
+  opacity: 1;
+  border: 1rpx solid rgba(0, 0, 0, 0.45);
+  color: rgba(0, 0, 0, 0.45);
+  background-color: #fff;
+  font-size: 24rpx;
+  padding: 0 24rpx;
+  margin-left: 16rpx;
+}
+.list .org_btn.active {
+  border-color: #D92B34;
+  color: #D92B34;
+}
+.list .org_btn::after {
+  border: none;
+}

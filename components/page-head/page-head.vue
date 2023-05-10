@@ -1,5 +1,5 @@
 <template name="page-head">
-	<view>
+	<view class="pagehead">
 		<uni-nav-bar backgroundColor="#D92B34" color="#ffffff" leftWidth="620rpx" :height="customBar">
 			<template v-slot:left>
 				<view :style="{'paddingTop': statusBar+'px'}">
@@ -68,6 +68,9 @@
 	}
 </script>
 <style scoped>
+	.pagehead {
+		z-index: 999;
+	}
 	.nav_menu {
 		display: flex;
 		align-items: center;
@@ -86,7 +89,7 @@
 
 	.nav_logo {
 		display: flex;
-		padding:  48rpx;
+		padding: 48rpx;
 		margin-top: 40rpx;
 		box-shadow: 0rpx 4rpx 8rpx 0rpx rgba(0,0,0,0.08);
 	}
@@ -97,8 +100,8 @@
 	}
 
 	.nav_logo_text {
-		font-size: 32rpx;
-		margin-left: 6rpx;
+		font-size: 36rpx;
+		margin-left: 20rpx;
 		line-height: 80rpx;
 	}
 
