@@ -1,0 +1,49 @@
+{
+	"pages": [
+		{
+			"path": "pages/businessStatistic/businessStatistic",
+			"style": {
+				"navigationBarTitleText": "营业统计",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/businessTarget/businessTarget",
+			"style": {
+				"navigationBarTitleText": "目标看板",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/realList/realList",
+			"style": {
+				"navigationBarTitleText": "实时看板",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"needLogin": false,
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		}
+		
+	],
+	"globalStyle": {
+		"navigationStyle": "custom",
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {
+			"background": "#efeff4"
+		}
+	},
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"u-(.*)": "@/uview/components/u-$1/u-$1.vue"
+		}
+	}
+}

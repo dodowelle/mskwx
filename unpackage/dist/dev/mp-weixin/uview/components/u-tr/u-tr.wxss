@@ -1,0 +1,8 @@
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+.u-tr.data-v-de3750ce {
+  display: flex;
+  flex-direction: row;
+}
+

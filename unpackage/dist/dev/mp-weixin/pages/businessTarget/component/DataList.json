@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "u-table": "/uview/components/u-table/u-table",
+    "u-tr": "/uview/components/u-tr/u-tr",
+    "u-th": "/uview/components/u-th/u-th",
+    "u-td": "/uview/components/u-td/u-td"
+  },
+  "component": true
+}

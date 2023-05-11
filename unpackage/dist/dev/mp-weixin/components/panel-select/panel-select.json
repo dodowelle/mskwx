@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "u-field": "/uview/components/u-field/u-field",
+    "u-select": "/uview/components/u-select/u-select"
+  },
+  "component": true
+}

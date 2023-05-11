@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+.data-v-c0dea834:export {
+  activeColor: #D92B34;
+}
+.cbox.data-v-c0dea834 {
+  margin: 24rpx;
+  padding: 24rpx;
+  background-color: #fff;
+  border-radius: 16rpx;
+  min-height: 200rpx;
+}
+.rank_top.data-v-c0dea834 {
+  background-color: #fff;
+}
+.date_update.data-v-c0dea834 {
+  padding: 24rpx 24rpx 0;
+}
+.date_num.data-v-c0dea834 {
+  color: rgba(0, 0, 0, 0.85);
+}
+.scroll_tab.data-v-c0dea834 {
+  background-color: #fff;
+}
+.scroll-view_H.data-v-c0dea834 {
+  white-space: nowrap;
+  width: 100%;
+}
+.scroll-view-item.data-v-c0dea834 {
+  height: 300rpx;
+  line-height: 300rpx;
+  text-align: center;
+  font-size: 36rpx;
+}
+.scroll-view-item_H.data-v-c0dea834 {
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: fit-content;
+  text-align: center;
+  font-size: 36rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  background: #f5f6fa;
+  border-radius: 4rpx;
+  padding: 0 24rpx;
+  margin: 30rpx 8rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+.tab_wrapper.data-v-c0dea834 {
+  padding: 0 16rpx;
+}
+.tab_item.active.data-v-c0dea834 {
+  background-color: #D92B34;
+  color: #fff;
+}
+

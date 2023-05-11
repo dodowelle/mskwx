@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+.data-v-161ea334:export {
+  activeColor: #D92B34;
+}
+.cbox.data-v-161ea334 {
+  padding: 24rpx;
+  background-color: #fff;
+  border-radius: 16rpx;
+  min-height: 200rpx;
+}
+.updateTime.data-v-161ea334 {
+  font-size: 24rpx;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.45);
+  width: -webkit-fit-content;
+  width: fit-content;
+  display: flex;
+  margin-bottom: 16rpx;
+}
+.text.data-v-161ea334 {
+  font-size: 24rpx;
+}
+.card_boxs.data-v-161ea334 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 33%);
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card_boxs .card_box.data-v-161ea334 {
+  padding: 24rpx;
+  background-color: #FAFAFC;
+  margin-right: 12rpx;
+  margin-top: 16rpx;
+}
+.card_boxs .card_box.data-v-161ea334:last-child {
+  margin-right: 0;
+}
+.card_boxs .card_box.active.data-v-161ea334 {
+  background-color: #FFF6F6;
+}
+.card_boxs .card_box .text.data-v-161ea334 {
+  font-size: 24rpx;
+  color: rgba(0, 0, 0, 0.45);
+  line-height: 1.6;
+}
+.card_boxs .card_box .count_num.data-v-161ea334 {
+  font-size: 24rpx;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.85);
+  line-height: 1.8;
+}
+.text.data-v-161ea334 {
+  font-size: 24rpx;
+}
+.rate.data-v-161ea334 {
+  font-size: 24rpx;
+}
+.iconfont.icon-top.data-v-161ea334 {
+  font-size: 24rpx;
+}
+.rank_top.data-v-161ea334 {
+  background-color: #fff;
+}
+.date_update.data-v-161ea334 {
+  padding: 24rpx 24rpx 0;
+}
+.date_num.data-v-161ea334 {
+  color: rgba(0, 0, 0, 0.85);
+}
+.scroll_tab.data-v-161ea334 {
+  background-color: #fff;
+}
+.scroll-view_H.data-v-161ea334 {
+  white-space: nowrap;
+  width: 100%;
+}
+.scroll-view-item.data-v-161ea334 {
+  height: 300rpx;
+  line-height: 300rpx;
+  text-align: center;
+  font-size: 36rpx;
+}
+.scroll-view-item_H.data-v-161ea334 {
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: fit-content;
+  text-align: center;
+  font-size: 36rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  background: #F5F6FA;
+  border-radius: 4rpx;
+  padding: 0 24rpx;
+  margin: 30rpx 8rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+.tab_wrapper.data-v-161ea334 {
+  padding: 0 16rpx;
+}
+.tab_item.active.data-v-161ea334 {
+  background-color: #D92B34;
+  color: #fff;
+}
+

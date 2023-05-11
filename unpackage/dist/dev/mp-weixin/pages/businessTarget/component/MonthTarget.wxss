@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+.btns.data-v-015be54c {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.def_btn.data-v-015be54c {
+  margin-left: 16rpx;
+  width: 160rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  background: #F5F6FA;
+  border-radius: 4rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: rgba(0, 0, 0, 0.65);
+}
+.charts.data-v-015be54c {
+  padding: 24rpx 0;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+}
+.chart_item.data-v-015be54c {
+  width: 200rpx;
+  height: 150rpx;
+  box-shadow: 0 0 2rpx 1px #FAFAFC;
+  background: #FAFAFC;
+  text-align: center;
+  padding: 20rpx;
+}
+

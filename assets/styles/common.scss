@@ -1,0 +1,68 @@
+@import './variable.scss';
+
+.flex_c {
+	display: flex;
+	align-items: center;
+}
+.flex_c_c {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.flex_c_b {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.gap__20 {
+	height: 20rpx;
+}
+
+.text {
+	font-size: 32rpx;
+	color: rgba(0,0,0,0.45);
+}
+
+.num {
+	font-size: 32rpx;
+	color: rgba(0, 0, 0, 0.85);;
+	font-weight: 600;
+}
+
+.up {
+	color: #E85858;
+}
+.down {
+	color: #08AB6F;
+}
+
+.cbox {
+	padding: 24rpx;
+	background-color: #fff;
+	border-radius: 16rpx;
+	min-height: 200rpx;
+
+	.c_title {
+		font-size: 36rpx;
+		color: rgba(0, 0, 0, 0.85);
+		font-weight: 600;
+		position: relative;
+		padding-left: 20rpx;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 18rpx;
+
+		&::before {
+			content: '';
+			display: block;
+			width: 8rpx;
+			height: 32rpx;
+			background: $red;
+			position: absolute;
+			left: 0;
+			top: 8rpx;
+		}
+	}
+}

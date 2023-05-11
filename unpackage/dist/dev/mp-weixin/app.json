@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/businessStatistic/businessStatistic",
+    "pages/businessTarget/businessTarget",
+    "pages/realList/realList",
+    "pages/index/index"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "usingComponents": {}
+}
