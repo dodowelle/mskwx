@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "门店风云榜",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "page-head": "/components/page-head/page-head",
+    "shop-select": "/components/shop-select/shop-select",
+    "u-field": "/uview/components/u-field/u-field",
+    "u-select": "/uview/components/u-select/u-select",
+    "real-rank": "/pages/businessHotShop/component/realRank"
+  }
+}

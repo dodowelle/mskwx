@@ -31,7 +31,7 @@
 				
 			</view>
 			<view class="charts-box">
-				<qiun-data-charts type="line" :canvas2d="true" :opts="opts" :chartData="chartData" />
+				<qiun-data-charts type="line" canvasId="charboxidsd132" :canvas2d="true" :opts="opts" :chartData="chartData" />
 			</view>
 		</view>
 	</view>
@@ -107,27 +107,6 @@ export default {
 		border-radius: 16rpx;
 		min-height: 200rpx;
 		
-		.c_title {
-			font-size: 36rpx;
-			color: rgba(0,0,0,0.85);
-			font-weight: 600;
-			position: relative;
-			padding-left: 20rpx;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			margin-bottom: 18rpx;
-			&::before {
-				content: '';
-				display: block;
-				width: 8rpx;
-				height: 32rpx;
-				background: $red;
-				position: absolute;
-				left: 0;
-				top: 8rpx;
-			}
-		}
 		.updateTime {
 			float: right;
 			font-size: 24rpx;

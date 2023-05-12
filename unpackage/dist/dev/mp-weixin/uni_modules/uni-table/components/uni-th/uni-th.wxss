@@ -46,7 +46,7 @@
   background-color: #ccc;
 }
 .down.active ::after {
-  background-color: #2979ff;
+  background-color: #D92B34;
 }
 .up ::after {
   content: '';
@@ -60,6 +60,6 @@
   background-color: #ccc;
 }
 .up.active ::after {
-  background-color: #2979ff;
+  background-color: #D92B34;
 }
 

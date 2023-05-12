@@ -12,6 +12,7 @@
 		<!-- #ifndef H5 -->
 		<view class="uni-table" :style="{ 'min-width': minWidth + 'px' }" :class="{ 'table--stripe': stripe }">
 			<slot></slot>
+			<slot name="empty"></slot>
 			<view v-if="noData" class="uni-table-loading">
 				<view class="uni-table-text" :class="{ 'empty-border': border }">{{ emptyText }}</view>
 			</view>
@@ -60,6 +61,10 @@ export default {
 		type: {
 			type: String,
 			default: ''
+		},
+		customEmpty: {
+			type: Boolean,
+			default: false
 		},
 		// 没有更多数据
 		emptyText: {

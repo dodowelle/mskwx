@@ -1,9 +1,12 @@
 {
   "pages": [
-    "pages/businessStatistic/businessStatistic",
+    "pages/index/index",
+    "pages/batchSetTarget/batchSetTarget",
+    "pages/selectTags/selectTags",
     "pages/businessTarget/businessTarget",
+    "pages/businessStatistic/businessStatistic",
     "pages/realList/realList",
-    "pages/index/index"
+    "pages/businessHotShop/businessHotShop"
   ],
   "subPackages": [],
   "window": {

@@ -48,7 +48,7 @@
           transform: translate(-50%, -50%);
 }
 .u-type-primary.data-v-d99c718e {
-  color: #2979ff;
+  color: #D92B34;
   background-color: #ecf5ff;
   border: 1px solid #d7eafe;
 }

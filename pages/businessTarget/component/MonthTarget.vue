@@ -2,32 +2,23 @@
   <view class="wrapper">
     <view class="charts">
       <view class="chart_item">
-        <qiun-data-chart
-          canvasId="yyechart"
-          :chartData="chartData1"
-          type="ring"
-          :opts="opts"
-        />
+        <view class="chart_inner">
+          <PieChart canvasId="yyechart" :color="['#D63E3E', '#F5E4E4']"/>
+        </view>
         <view class="text">营业额</view>
         <view class="num">¥1,323.95</view>
       </view>
       <view class="chart_item">
-        <qiun-data-chart
-          canvasId="shsschart"
-          :chartData="chartData1"
-          type="ring"
-          :opts="opts"
-        />
+        <view class="chart_inner">
+          <PieChart canvasId="chartshss" :color="['#2A82E4', '#DCEAFA']"/>
+        </view>
         <view class="text">商户实收</view>
         <view class="num">¥1,323.95</view>
       </view>
       <view class="chart_item">
-        <qiun-data-chart
-          canvasId="yxddchart"
-          :chartData="chartData1"
-          type="ring"
-          :opts="opts"
-        />
+        <view class="chart_inner">
+          <PieChart canvasId="yxddchart" :color="['#F0AE3C', '#F2ECE1']"/>
+        </view>
         <view class="text">有效订单</view>
         <view class="num">¥1,323.95</view>
       </view>
@@ -35,85 +26,55 @@
     <view class="btns">
       <view class="def_btn" size="mini">导出数据</view>
       <view class="def_btn" size="mini">录入目标</view>
-      <view class="def_btn" size="mini">指标选择</view>
+      <view class="def_btn" size="mini" @click="toSelectTag">指标选择</view>
     </view>
-
   </view>
 </template>
 <script>
-const opts = {
-  color: [
-    "#D92B34",
-    "#D8D8D8",
-    "#FAC858",
-    "#73C0DE",
-    "#3CA272",
-    "#FC8452",
-    "#9A60B4",
-    "#ea7ccc",
-  ],
-  rotate: false,
-  rotateLock: false,
-  padding: [5, 5, 5, 5],
-  dataLabel: true,
-  enableScroll: false,
-  legend: {
-    show: true,
-    position: "right",
-    lineHeight: 25,
-  },
-  title: {
-    name: "收益率",
-    fontSize: 15,
-    color: "#666666",
-  },
-  subtitle: {
-    name: "70%",
-    fontSize: 25,
-    color: "#7cb5ec",
-  },
-  extra: {
-    ring: {
-      ringWidth: 60,
-      activeOpacity: 0.5,
-      activeRadius: 10,
-      offsetAngle: 0,
-      labelWidth: 15,
-      border: false,
-      borderWidth: 3,
-      borderColor: "#FFFFFF",
-    },
-  },
-};
+import PieChart from './PieChart.vue';
+
 export default {
+  components: {
+    PieChart
+  },
   data() {
     return {
-      opts,
       chartData1: {},
       chartData2: {},
-      chartData3: {}
+      chartData3: {},
     };
   },
   mounted() {
-    this.initcharts()
+    this.initcharts();
   },
   methods: {
-    initcharts () {
+    toSelectTag () {
+      uni.navigateTo({
+        url: '/pages/selectTags/selectTags'
+      })
+    },
+    initcharts() {
       setTimeout(() => {
         //模拟服务器返回数据，如果数据格式和标准格式不同，需自行按下面的格式拼接
         let res = {
           series: [
             {
-              data: [{"name":"一班","value":50},{"name":"二班","value":30},{"name":"三班","value":20},{"name":"四班","value":18},{"name":"五班","value":8}]
-            }
-          ]
+              data: [
+                { name: "一班", value: 50 },
+                { name: "二班", value: 30 },
+                { name: "三班", value: 20 },
+                { name: "四班", value: 18 },
+                { name: "五班", value: 8 },
+              ],
+            },
+          ],
         };
         this.chartData1 = JSON.parse(JSON.stringify(res));
         this.chartData2 = JSON.parse(JSON.stringify(res));
         this.chartData3 = JSON.parse(JSON.stringify(res));
       }, 500);
-    }
-  }
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -126,11 +87,11 @@ export default {
   width: 160rpx;
   height: 64rpx;
   line-height: 64rpx;
-  background: #F5F6FA;
+  background: #f5f6fa;
   border-radius: 4rpx;
   text-align: center;
   font-size: 28rpx;
-  color: rgba(0,0,0,0.65);
+  color: rgba(0, 0, 0, 0.65);
 }
 
 .charts {
@@ -139,14 +100,16 @@ export default {
   grid-template-columns: repeat(3, 33%); // 行数 （每行都会显示） （每一行的最
 }
 .chart_item {
-  width: 200rpx;
-  height: 150rpx;
-  box-shadow: 0 0 2rpx 1px #FAFAFC;
-  background: #FAFAFC;
+  
+  box-shadow: 0 0 2rpx 1px #fafafc;
+  background: #fafafc;
   text-align: center;
   padding: 20rpx;
-
+  .chart_inner {
+    width: 220rpx;
+  }
 }
-
-
+.num {
+  margin: 8rpx 0;
+}
 </style>

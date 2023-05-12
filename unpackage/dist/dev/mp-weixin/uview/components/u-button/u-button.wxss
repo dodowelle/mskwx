@@ -30,8 +30,8 @@
 }
 .u-btn--primary.data-v-1054bb99 {
   color: #ffffff;
-  border-color: #2979ff;
-  background-color: #2979ff;
+  border-color: #D92B34;
+  background-color: #D92B34;
 }
 .u-btn--success.data-v-1054bb99 {
   color: #ffffff;
@@ -74,7 +74,7 @@
   background-color: #fcbd71 !important;
 }
 .u-btn--primary--plain.data-v-1054bb99 {
-  color: #2979ff !important;
+  color: #D92B34 !important;
   border-color: #a0cfff !important;
   background-color: #ecf5ff !important;
 }

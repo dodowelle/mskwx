@@ -33,15 +33,12 @@
 			</view>
 		</view>
 		<view class="uni-container">
-			<uni-table ref="table" :loading="loading" border stripe emptyText="暂无更多数据">
+			<uni-table ref="table" :loading="loading" border stripe customEmpty>
 				<uni-tr>
 					<uni-th width="60" align="center">排行</uni-th>
-					<uni-th align="center">本期值</uni-th>
-					<uni-th width="90" align="center" :sortable="true">流量</uni-th>
-					<uni-th width="90" align="center" :sortable="true">订单</uni-th>
-					<uni-th width="90" align="center" :sortable="true">活动</uni-th>
-					<uni-th width="90" align="center" :sortable="true">利息</uni-th>
-					<!-- <uni-th width="204" align="center">操作</uni-th> -->
+					<uni-th width="100" align="center">本期值</uni-th>
+					<uni-th width="100" align="center" :sortable="true">美团</uni-th>
+					<uni-th width="100" align="center" :sortable="true">饿了么</uni-th>
 				</uni-tr>
 				<uni-tr v-for="(item, index) in tableData" :key="index">
 					<uni-td>{{ item.date }}</uni-td>
@@ -53,19 +50,24 @@
 					<uni-td align="center">{{ item.address }}</uni-td>
 					
 				</uni-tr>
+				<empty-state slot="empty" />
 			</uni-table>
+			
 		</view>
 
 	</view>
 </template>
 
 <script>
-
+import EmptyState from '@/components/empty-state/empty-state.vue'
 export default {
+	components: {
+		EmptyState
+	},
 	data () {
 		return {
 			loading: false,
-			tabs: ['商户实收', '营业额','有效订单','到手率','单均商户实收'],
+			tabs: ['常用指标', '营收','流量','订单','活动','利息'],
 			activeIndex: 0,
 			tableData: [],
 
@@ -115,6 +117,7 @@ export default {
 			background-color: #FAFAFC;
 			margin-right: 12rpx;
 			margin-top: 16rpx;
+			text-align: center;
 			&:last-child {
 				margin-right: 0;
 			}
@@ -125,7 +128,7 @@ export default {
 				font-size: 24rpx;color: rgba(0,0,0,0.45);
 				line-height: 1.6;
 			}
-			.count_num {font-size: 24rpx;font-weight: 600; color: rgba(0,0,0,0.85);line-height: 1.8;}
+			.count_num {font-size: 32rpx;font-weight: 600; color: rgba(0,0,0,0.85);line-height: 1.8;}
 		}
 		
 	}

@@ -7,7 +7,7 @@
 		<view class="list">
 			<view class="list_item" v-for="(item, index) in orgList" :key="index">
 				<view class="flex_c_c">
-					<image class="org_icon" src="../../assets/images/org_icon.png" mode="aspectFit"></image>
+					<image class="org_icon" src="@/static/images/org_icon.png" mode="aspectFit"></image>
 					<text class="org_name">{{item}}</text>
 				</view>
 				<view>

@@ -1,12 +1,15 @@
 @charset "UTF-8";
 /* 水平间距 */
 /* 水平间距 */
+.data-v-e6d27b28:deep(.u-field) {
+  padding: 24rpx 0;
+}
 .select_wrapper.data-v-e6d27b28 {
-  margin-top: 0;
   display: flex;
   align-items: center;
-  padding: 0 24rpx;
-  width: 400rpx;
+  padding: 0;
+  width: 360rpx;
+  margin-left: -20rpx;
 }
 .select_wrapper .store_icon.data-v-e6d27b28 {
   width: 34rpx;

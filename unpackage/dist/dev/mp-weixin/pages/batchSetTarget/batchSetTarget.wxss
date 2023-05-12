@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+.cbox.data-v-ea4740b4 {
+  margin: 24rpx;
+  padding: 60rpx;
+}
+.center.data-v-ea4740b4 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.p24.data-v-ea4740b4 {
+  padding: 24rpx;
+}
+._title.data-v-ea4740b4 {
+  font-size: 28rpx;
+  font-family: Noto Sans SC-Regular, Noto Sans SC;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.85);
+  line-height: 2;
+  margin-bottom: 12rpx;
+}
+.alink.data-v-ea4740b4 {
+  color: #2A82E4;
+}
+.desc.data-v-ea4740b4 {
+  font-size: 24rpx;
+  line-height: 1.8;
+}
+.filed_set.data-v-ea4740b4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.exportbtn.data-v-ea4740b4 {
+  width: 258rpx;
+}
+.gap.data-v-ea4740b4 {
+  width: 100%;
+  height: 40rpx;
+}
+

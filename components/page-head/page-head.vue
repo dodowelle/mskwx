@@ -3,8 +3,12 @@
 		<uni-nav-bar backgroundColor="#D92B34" color="#ffffff" leftWidth="620rpx" :height="customBar">
 			<template v-slot:left>
 				<view :style="{'paddingTop': statusBar+'px'}">
-					<view class="nav_menu" @click="toggle">
-						<uni-icons type="bars" size="20" color="#ffffff"></uni-icons>
+					<view v-if="isPrev" class="nav_menu" @click="goBack">
+						<uni-icons type="arrow-left" :size="20" color="#ffffff"></uni-icons>
+						<text class="nav_title">{{title}}</text>
+					</view>
+					<view v-else class="nav_menu" @click="toggle">
+						<uni-icons type="bars" :size="20" color="#ffffff"></uni-icons>
 						<text class="nav_title">{{title}}</text>
 					</view>
 
@@ -36,6 +40,10 @@
 			title: {
 				type: String,
 				default: ""
+			},
+			isPrev: {
+				type: Boolean,
+				default: false
 			}
 		},
 		data() {
@@ -57,6 +65,9 @@
 			})
 		},
 		methods: {
+			goBack () {
+				uni.navigateBack()
+			},
 			toggle() {
 				this.$refs.navLeft.open()
 			},

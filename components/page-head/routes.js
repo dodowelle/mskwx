@@ -59,6 +59,15 @@ const routes = [
 					icon: ''
 				}
 			},
+			{
+				name: "BusinessHotShop",
+				path: "/pages/businessHotShop/businessHotShop",
+				hidden: false,
+				meta: {
+					title: '门店风云榜',
+					icon: ''
+				}
+			},
 		]
 	}
 ]

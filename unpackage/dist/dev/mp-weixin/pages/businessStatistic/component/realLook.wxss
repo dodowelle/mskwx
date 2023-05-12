@@ -4,32 +4,32 @@
 .data-v-e5b8a7b2:export {
   activeColor: #D92B34;
 }
+.tagbtn.data-v-e5b8a7b2 {
+  width: 158rpx;
+  height: 48rpx;
+  background: #F5F6FA;
+  line-height: 48rpx;
+  text-align: center;
+  border-radius: 4rpx;
+  position: relative;
+  font-size: 24rpx;
+  color: rgba(0, 0, 0, 0.65);
+}
+.tagbtn.data-v-e5b8a7b2:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 158rpx;
+  height: 48rpx;
+  border-radius: 4rpx;
+  border: 1rpx solid #D8D8D8;
+}
 .cbox.data-v-e5b8a7b2 {
   padding: 24rpx;
   background-color: #fff;
   border-radius: 16rpx;
   min-height: 200rpx;
-}
-.cbox .c_title.data-v-e5b8a7b2 {
-  font-size: 36rpx;
-  color: rgba(0, 0, 0, 0.85);
-  font-weight: 600;
-  position: relative;
-  padding-left: 20rpx;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 18rpx;
-}
-.cbox .c_title.data-v-e5b8a7b2::before {
-  content: '';
-  display: block;
-  width: 8rpx;
-  height: 32rpx;
-  background: #D92B34;
-  position: absolute;
-  left: 0;
-  top: 8rpx;
 }
 .charts-box.data-v-e5b8a7b2 {
   width: 100%;

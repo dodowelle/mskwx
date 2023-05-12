@@ -1,5 +1,5 @@
 <template>
-  <!-- 实时看板 -->
+  <!-- 营业统计 -->
   <view class="container">
     <page-head title="营业统计"></page-head>
     <view class="toptab">

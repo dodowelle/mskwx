@@ -34,6 +34,7 @@
   background-color: #FAFAFC;
   margin-right: 12rpx;
   margin-top: 16rpx;
+  text-align: center;
 }
 .card_boxs .card_box.data-v-161ea334:last-child {
   margin-right: 0;
@@ -47,7 +48,7 @@
   line-height: 1.6;
 }
 .card_boxs .card_box .count_num.data-v-161ea334 {
-  font-size: 24rpx;
+  font-size: 32rpx;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.85);
   line-height: 1.8;

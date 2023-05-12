@@ -10,7 +10,7 @@
   width: 160rpx;
   height: 64rpx;
   line-height: 64rpx;
-  background: #F5F6FA;
+  background: #f5f6fa;
   border-radius: 4rpx;
   text-align: center;
   font-size: 28rpx;
@@ -22,11 +22,15 @@
   grid-template-columns: repeat(3, 33%);
 }
 .chart_item.data-v-015be54c {
-  width: 200rpx;
-  height: 150rpx;
-  box-shadow: 0 0 2rpx 1px #FAFAFC;
-  background: #FAFAFC;
+  box-shadow: 0 0 2rpx 1px #fafafc;
+  background: #fafafc;
   text-align: center;
   padding: 20rpx;
+}
+.chart_item .chart_inner.data-v-015be54c {
+  width: 220rpx;
+}
+.num.data-v-015be54c {
+  margin: 8rpx 0;
 }
 

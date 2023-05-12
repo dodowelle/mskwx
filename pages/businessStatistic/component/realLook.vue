@@ -2,22 +2,13 @@
 	<!-- 实时看板 -->
 	<view>
 		
-
-		<!-- <view class="scroll_tab">
-			<scroll-view class="scroll-view_H" scroll-x="true" scroll-left="120">
-				<view class="tab_wrapper">
-					<view :class="['scroll-view-item_H', 'tab_item', activeIndex === index ? 'active':'']" @click="toggle(index)" v-for="(item,index) in tabs" :key="index">{{item}}</view>
-				</view>
-			</scroll-view>
-
-		</view> -->
 		<realRank />
 		
 		<view class="cbox">
 			<view class="c_title">
 				<text>走势分析</text>
 				<view class="tag-sel">
-					<u-button size="mini">指标选择(2)</u-button>
+					<view class="tagbtn" @click="toChooseTags">指标选择(2)</view>
 				</view>
 				
 			</view>
@@ -83,6 +74,11 @@ export default {
 		}, 200);
 	},
 	methods: {
+		toChooseTags () {
+			uni.navigateTo({
+        url: '/pages/selectTags/selectTags'
+      })
+		},
 		toggle (index) {
 			this.activeIndex = index;
 		},
@@ -99,33 +95,33 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/assets/styles/variable.scss';
+.tagbtn {
+	width: 158rpx;
+	height: 48rpx;
+	background: #F5F6FA;
+	line-height: 48rpx;
+	text-align: center;
+	border-radius: 4rpx;
+	position: relative;
+	font-size: 24rpx;
+	color: rgba(0,0,0,0.65);
+	&:after {
+		content: '';
+		position: absolute;
+		left:0;
+		top: 0;
+		width: 158rpx;
+		height: 48rpx;
+		border-radius: 4rpx;
+		border: 1rpx solid #D8D8D8;
+
+	}
+}
 	.cbox {
 		padding: 24rpx;
 		background-color: #fff;
 		border-radius: 16rpx;
 		min-height: 200rpx;
-		
-		.c_title {
-			font-size: 36rpx;
-			color: rgba(0,0,0,0.85);
-			font-weight: 600;
-			position: relative;
-			padding-left: 20rpx;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			margin-bottom: 18rpx;
-			&::before {
-				content: '';
-				display: block;
-				width: 8rpx;
-				height: 32rpx;
-				background: $red;
-				position: absolute;
-				left: 0;
-				top: 8rpx;
-			}
-		}
 		
 	}
 

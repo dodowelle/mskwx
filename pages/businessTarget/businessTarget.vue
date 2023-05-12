@@ -5,34 +5,33 @@
       <shop-select></shop-select>
       <view class="select_wrapper select2">
         <panel-select class="selin"></panel-select>
-        <view class="gap"></view>
         <data-select class="selin"></data-select>
         <org-select class="selin"></org-select>
       </view>
     </view>
     <view class="content">
       <view class="switch_gap">
-        <text class="text">过滤无数据门店目标 </text>
+        <text class="switch_label">过滤无数据门店目标 </text>
         <u-switch v-model="checked"></u-switch>
         
       </view>
       <view class="cbox">
         <view class="c_title">
           <view class="c_inner">
-            <text class="text">本月目标达成情况 </text>
+            <text>本月目标达成情况 </text>
             <u-icon name="question-circle-fill" color="#2979ff" size="28" @click="showToast"></u-icon>
           </view>
         </view>
 				<view class="c_tip flex_c_b">
-					<text class="text"><text class="red">·</text> 时间进度 <text class="num">23.55%</text> </text>
-					<text class="text"><text class="black">·</text>	 还剩 <text class="num">12天</text></text>
+					<text class="text"><text class="red">· </text> 时间进度 <text class="tnum">23.55%</text> </text>
+					<text class="text"><text class="black">· </text>	 还剩 <text class="tnum">12天</text></text>
 				</view>
 
 				<month-target />
       </view>
       <view class="cbox">
         <view class="c_title">
-          <text class="text">数据列表</text>
+          <text>数据列表</text>
         </view>
         <view class="select_wrapper">
           <view class="selin">
@@ -139,8 +138,11 @@ export default {
 }
 .toptab  {
   background-color: #fff;
+  padding: 0 20rpx;
 }
-
+.num {
+  line-height: 3;
+}
 .cbox {
   margin-bottom: 24rpx;
 }
@@ -166,12 +168,22 @@ export default {
 }
 
 .select2 {
-  width: 700rpx;
+  width: 100%;
   justify-content: center;
   display: flex;
   align-items: center;
+  position: relative;
   .selin {
-    margin-right: 4rpx;
+    margin-right: 10rpx;
+  }
+  &:after {
+    content:'';
+    width: 2rpx;
+    height: 40rpx;
+    background-color: #efefef;
+    display: inline-block;
+    position: absolute;
+    left: 252rpx;
   }
   :deep(.uni-select) {
     border: none;
@@ -188,15 +200,6 @@ export default {
   }
 }
 
-.gap {
-  width: 2rpx;
-  height: 40rpx;
-  background-color: #ccc;
-  display: inline-block;
-  margin: 0 24rpx;
-  clear: both;
-}
-
 .content {
   background-color: #f5f6fa;
 }
@@ -204,10 +207,10 @@ export default {
 .switch_gap {
   padding: 28rpx 24rpx;
   display: flex;
-  .text {
-    margin-right: 12rpx;
-  }
+  align-items: center;
 }
+
+.switch_label {margin-right: 12rpx;}
 
 .c_tip {
 	width: 670rpx;
@@ -218,12 +221,14 @@ export default {
 	.red {
 		color: #D92B34;
 		font-weight: bold;
+    margin-right: 4rpx;
 	}
 	.black {
-		color: #000;
+    color: #000;
 		font-weight: bold;
+    margin-right: 4rpx;
 	}
-	.num {
+	.tnum {
 		color: rgba(0,0,0,0.85);
 	}
 }

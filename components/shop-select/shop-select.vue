@@ -1,10 +1,11 @@
 <template>
   <view class="select_wrapper">
     <u-field @click="show = true" v-model="storeData" 
-			:label-width="80"
+			:label-width="40"
 			:border-bottom="false"
 			:disabled="true" placeholder="请选择门店"
 			right-icon="arrow-down-fill"
+			class="u_field"
 			>
 			<image
 				slot="icon"
@@ -23,7 +24,7 @@ export default {
 			show: false,
 			list:[
 				{
-					label: '一级组织',
+					label: '市井婆豆沙牛乳',
 					value: '0',
 					children: [{
 						text: '二级组织',
@@ -44,13 +45,15 @@ export default {
 
 </script>
 <style lang="scss" scoped>
-
+:deep(.u-field) {
+	padding: 24rpx 0;
+}
 .select_wrapper {
-	margin-top: 0;
 	display: flex;
 	align-items: center;
-	padding: 0 24rpx;
-	width: 400rpx;
+	padding: 0;
+	width: 360rpx;
+	margin-left: -20rpx;
 	.store_icon {
 		width: 34rpx;
 		height: 34rpx;

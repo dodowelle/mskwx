@@ -1,8 +1,7 @@
 {
+  "component": true,
   "usingComponents": {
-    "u-button": "/uview/components/u-button/u-button",
     "qiun-data-charts": "/uni_modules/qiun-data-charts/components/qiun-data-charts/qiun-data-charts",
     "real-rank": "/pages/businessStatistic/component/realRank"
-  },
-  "component": true
+  }
 }

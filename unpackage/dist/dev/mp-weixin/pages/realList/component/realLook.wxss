@@ -11,27 +11,6 @@
   border-radius: 16rpx;
   min-height: 200rpx;
 }
-.cbox .c_title.data-v-1695b4d9 {
-  font-size: 36rpx;
-  color: rgba(0, 0, 0, 0.85);
-  font-weight: 600;
-  position: relative;
-  padding-left: 20rpx;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 18rpx;
-}
-.cbox .c_title.data-v-1695b4d9::before {
-  content: '';
-  display: block;
-  width: 8rpx;
-  height: 32rpx;
-  background: #D92B34;
-  position: absolute;
-  left: 0;
-  top: 8rpx;
-}
 .cbox .updateTime.data-v-1695b4d9 {
   float: right;
   font-size: 24rpx;

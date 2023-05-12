@@ -1,9 +1,23 @@
 {
 	"pages": [
 		{
-			"path": "pages/businessStatistic/businessStatistic",
+			"path": "pages/index/index",
+			"needLogin": false,
 			"style": {
-				"navigationBarTitleText": "营业统计",
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		{
+			"path": "pages/batchSetTarget/batchSetTarget",
+			"style": {
+				"navigationBarTitleText": "批量设置目标",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/selectTags/selectTags",
+			"style": {
+				"navigationBarTitleText": "选择指标",
 				"enablePullDownRefresh": false
 			}
 		},
@@ -15,21 +29,30 @@
 			}
 		},
 		{
+			"path": "pages/businessStatistic/businessStatistic",
+			"style": {
+				"navigationBarTitleText": "营业统计",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
 			"path": "pages/realList/realList",
 			"style": {
 				"navigationBarTitleText": "实时看板",
 				"enablePullDownRefresh": false
 			}
-		},
-		{
-			"path": "pages/index/index",
-			"needLogin": false,
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
 		}
 		
-	],
+	    ,{
+            "path" : "pages/businessHotShop/businessHotShop",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "门店风云榜",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationStyle": "custom",
 		"navigationBarTextStyle": "black",
