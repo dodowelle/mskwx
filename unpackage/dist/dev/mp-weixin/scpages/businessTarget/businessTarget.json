@@ -1,0 +1,18 @@
+{
+  "navigationBarTitleText": "目标看板",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "page-head": "/components/page-head/page-head",
+    "shop-select": "/components/shop-select/shop-select",
+    "panel-select": "/components/panel-select/panel-select",
+    "data-select": "/components/data-select/data-select",
+    "org-select": "/components/org-select/org-select",
+    "u-switch": "/uview/components/u-switch/u-switch",
+    "u-icon": "/uview/components/u-icon/u-icon",
+    "u-field": "/uview/components/u-field/u-field",
+    "u-select": "/uview/components/u-select/u-select",
+    "u-toast": "/uview/components/u-toast/u-toast",
+    "month-target": "/scpages/businessTarget/component/MonthTarget",
+    "data-list": "/scpages/businessTarget/component/DataList"
+  }
+}

@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+.btns.data-v-7e6febac {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.def_btn.data-v-7e6febac {
+  margin-left: 16rpx;
+  width: 160rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  background: #f5f6fa;
+  border-radius: 4rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: rgba(0, 0, 0, 0.65);
+}
+.charts.data-v-7e6febac {
+  padding: 24rpx 0;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+}
+.chart_item.data-v-7e6febac {
+  box-shadow: 0 0 2rpx 1px #fafafc;
+  background: #fafafc;
+  text-align: center;
+  padding: 20rpx;
+}
+.chart_item .chart_inner.data-v-7e6febac {
+  width: 220rpx;
+}
+.num.data-v-7e6febac {
+  margin: 8rpx 0;
+}
+

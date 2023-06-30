@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "u-icon": "/uview/components/u-icon/u-icon",
+    "u-toast": "/uview/components/u-toast/u-toast",
+    "qiun-data-charts": "/uni_modules/qiun-data-charts/components/qiun-data-charts/qiun-data-charts"
+  },
+  "component": true
+}

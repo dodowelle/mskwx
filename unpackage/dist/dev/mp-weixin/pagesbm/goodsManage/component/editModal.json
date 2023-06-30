@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "u-modal": "/uview/components/u-modal/u-modal",
+    "u-form": "/uview/components/u-form/u-form",
+    "u-form-item": "/uview/components/u-form-item/u-form-item",
+    "u-input": "/uview/components/u-input/u-input"
+  },
+  "component": true
+}

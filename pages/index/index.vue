@@ -1,13 +1,13 @@
 <template>
 	<view class="container">
-		<page-head title="营业统计"></page-head>
+		<page-head title="选择门店"></page-head>
 		<view style="padding: 12rpx;">
 			<uni-search-bar @confirm="search" placeholder="输入门店名称" radius="20" bgColor="#F5F6FA" clearButton="auto" cancelButton="none"></uni-search-bar>
 		</view>
 		<view class="list">
 			<view class="list_item" v-for="(item, index) in orgList" :key="index">
 				<view class="flex_c_c">
-					<image class="org_icon" src="../../assets/images/org_icon.png" mode="aspectFit"></image>
+					<image class="org_icon" src="@/static/images/org_icon.png" mode="aspectFit"></image>
 					<text class="org_name">{{item}}</text>
 				</view>
 				<view>
@@ -18,7 +18,7 @@
 		</view>
 		<uni-drawer ref="showRight" mode="right" :width="screenWidth" :mask-click="true">
 			<view>
-				<next-orgit />
+				<next-orgit :orgList="orgList" />
 				<view class="footerbar">
 					<view class="footerbar_btn" @click="selectAll">全部门店</view>	
 					<view class="footerbar_btn" @click="goBack">返回上级</view>	
@@ -28,26 +28,31 @@
 	</view>
 </template>
 
-<script setup>
-import {ref, getCurrentInstance} from 'vue';
-const cns = getCurrentInstance();
+<script>
 
-const screenWidth = uni.getWindowInfo().screenWidth;
-const orgList = ref(['运营组一','运营组二','运营组三','运营组四']);
-const search = (val) => {
-	console.log('search', val)
+export default {
+	data () {
+		return {
+			screenWidth: uni.getWindowInfo().screenWidth,
+			orgList: ['运营组一','运营组二','运营组三','运营组四']
+		}
+	},
+	methods: {
+		search: (val) => {
+			console.log('search', val)
+		},
+		shoDrawer () {
+			this.$refs['showRight'].open()
+		},
+		selectAll(){
+			this.$refs['showRight'].close()
+		},
+		goBack() {
+			this.$refs['showRight'].close()
+		}
+	}
 }
 
-const shoDrawer = () => {
-	console.log(666,cns)
-	cns.refs['showRight'].open()
-}
-const selectAll = () => {
-	cns.refs['showRight'].close()
-}
-const goBack = () => {
-	cns.refs['showRight'].close()
-}
 </script>
 
 <style lang="scss">

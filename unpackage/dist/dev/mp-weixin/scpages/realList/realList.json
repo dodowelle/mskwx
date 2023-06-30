@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "实时看板",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "page-head": "/components/page-head/page-head",
+    "shop-select": "/components/shop-select/shop-select",
+    "panel-select": "/components/panel-select/panel-select",
+    "data-select": "/components/data-select/data-select",
+    "real-look": "/scpages/realList/component/realLook",
+    "real-rank": "/scpages/realList/component/realRank"
+  }
+}

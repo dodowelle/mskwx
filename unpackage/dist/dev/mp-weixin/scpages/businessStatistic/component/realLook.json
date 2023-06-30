@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "qiun-data-charts": "/uni_modules/qiun-data-charts/components/qiun-data-charts/qiun-data-charts",
+    "real-rank": "/scpages/businessStatistic/component/realRank"
+  }
+}

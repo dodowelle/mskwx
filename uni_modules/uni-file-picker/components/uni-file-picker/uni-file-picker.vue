@@ -17,7 +17,7 @@
 		<upload-file v-if="fileMediatype !== 'image' || showType !== 'grid'" :readonly="readonly"
 			:list-styles="listStyles" :files-list="filesList" :showType="showType" :delIcon="delIcon"
 			@uploadFiles="uploadFiles" @choose="choose" @delFile="delFile">
-			<slot><button type="primary" size="mini">选择文件</button></slot>
+			<slot><button class="upload_btn_small" type="primary" size="mini">选择文件</button></slot>
 		</upload-file>
 	</view>
 </template>
@@ -617,6 +617,10 @@
 </script>
 
 <style>
+	.upload_btn_small {
+		background-color: #D92B34;
+		width: 100%;
+	}
 	.uni-file-picker {
 		/* #ifndef APP-NVUE */
 		box-sizing: border-box;

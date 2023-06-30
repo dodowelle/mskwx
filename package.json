@@ -1,18 +1,10 @@
 {
-    "id": "neo-tree-list-item",
-    "name": "多级列表，分级、分层列表",
-    "displayName": "多级列表，分级、分层列表",
-    "version": "1.0",
-    "description": "多级列表，分级、分层列表，常用于部门、分类（多层）列表展示使用，理论上层数无限制",
-    "keywords": [
-        "多级列表",
-        "分层列表",
-        "多层列表"
-    ],
-    "dcloudext": {
-        "category": [
-            "前端组件",
-            "通用组件"
-        ]
-    }
+  "name": "meishikai_wx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "uni-read-pages": "^1.0.5",
+    "uni-simple-router": "^2.0.5"
+  }
 }

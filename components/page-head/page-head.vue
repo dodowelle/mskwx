@@ -3,11 +3,14 @@
 		<uni-nav-bar backgroundColor="#D92B34" color="#ffffff" leftWidth="620rpx" :height="customBar">
 			<template v-slot:left>
 				<view :style="{'paddingTop': statusBar+'px'}">
-					<view class="nav_menu" @click="toggle">
-						<uni-icons type="bars" size="20" color="#ffffff"></uni-icons>
+					<view v-if="isPrev" class="nav_menu" @click="goBack">
+						<uni-icons type="arrow-left" :size="20" color="#ffffff"></uni-icons>
 						<text class="nav_title">{{title}}</text>
 					</view>
-
+					<view v-else class="nav_menu" @click="toggle">
+						<uni-icons type="bars" :size="20" color="#ffffff"></uni-icons>
+						<text class="nav_title">{{title}}</text>
+					</view>
 				</view>
 			</template>
 		</uni-nav-bar>
@@ -18,8 +21,7 @@
 					<text class="nav_logo_text">每时开外卖工具箱</text>
 				</view>
 				<view class="nav_inner">
-					<siderbarItem v-for="(route, index) in routes" :key="index" :item="route"
-						 v-model:active-index="activeIndex" />
+					<siderbarItem v-for="(route, index) in getSideRouter" :key="index" :item="route" />
 				</view>
 			</view>
 		</uni-drawer>
@@ -28,6 +30,7 @@
 <script>
 	import routes from './routes.js'
 	import siderbarItem from './siderbarItem.vue'
+	import { mapGetters } from 'vuex'
 	export default {
 		name: "page-head",
 		components: {
@@ -37,6 +40,10 @@
 			title: {
 				type: String,
 				default: ""
+			},
+			isPrev: {
+				type: Boolean,
+				default: false
 			}
 		},
 		data() {
@@ -48,6 +55,9 @@
 				activeItem: '门店选择1'
 			}
 		},
+		computed: {
+			...mapGetters(['getSideRouter'])
+		},
 		created() {
 			const that = this;
 			uni.getSystemInfo({
@@ -57,7 +67,11 @@
 				}
 			})
 		},
+		
 		methods: {
+			goBack () {
+				uni.navigateBack()
+			},
 			toggle() {
 				this.$refs.navLeft.open()
 			},

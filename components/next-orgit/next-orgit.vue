@@ -7,7 +7,7 @@
 		<view class="list">
 			<view class="list_item" v-for="(item, index) in orgList" :key="index">
 				<view class="flex_c_c">
-					<image class="org_icon" src="../../assets/images/org_icon.png" mode="aspectFit"></image>
+					<image class="org_icon" src="@/static/images/org_icon.png" mode="aspectFit"></image>
 					<text class="org_name">{{item}}</text>
 				</view>
 				<view>
@@ -21,13 +21,24 @@
 	</view>
 </template>
 
-<script setup>
+<script>
+export default {
+	props: {
+		orgList: {
+			type: Array,
+			required: true
+		}
+	},
+	data () {
+		return {}
+	},
+	methods: {
+		search () {
 
-import {ref} from 'vue';
-const orgList = ref(['运营组一','运营组二','运营组三','运营组四']);
-const search = (val) => {
-	console.log('search', val)
+		}
+	}
 }
+
 </script>
 
 <style lang="scss">

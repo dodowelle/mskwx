@@ -6,7 +6,7 @@
   },
   "setting": {
     "urlCheck": false,
-    "es6": true,
+    "es6": false,
     "postcss": false,
     "minified": false,
     "newFeature": true,
@@ -16,14 +16,12 @@
       "disablePlugins": [],
       "outputPath": ""
     },
-    "condition": false,
-    "ignoreDevUnusedFiles": false,
-    "ignoreUploadUnusedFiles": false
+    "condition": false
   },
   "compileType": "miniprogram",
-  "libVersion": "2.31.1",
+  "libVersion": "2.32.3",
   "appid": "wx5ab4c7a56947767f",
-  "projectname": "MeiShiKai_wx",
+  "projectname": "mskwx",
   "condition": {},
   "editorSetting": {
     "tabIndent": "insertSpaces",

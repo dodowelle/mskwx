@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+.addform.data-v-c1f98e9e {
+  margin: 24rpx;
+  background-color: #fff;
+  padding: 24rpx;
+  border-radius: 16rpx;
+}
+.form-gap.data-v-c1f98e9e {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-gap .addmore.data-v-c1f98e9e {
+  border: 1px dashed #efefef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+  padding: 16rpx;
+  width: 486rpx;
+  height: 64rpx;
+  margin-top: 12rpx;
+}
+

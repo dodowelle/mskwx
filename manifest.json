@@ -1,6 +1,6 @@
 {
-    "name" : "MeiShiKai_wx",
-    "appid" : "",
+    "name" : "mskwx",
+    "appid" : "__UNI__C040EFA",
     "description" : "",
     "versionName" : "1.0.0",
     "versionCode" : "100",
@@ -56,5 +56,5 @@
         },
         "usingComponents" : true
     },
-    "vueVersion" : "3"
+    "vueVersion" : "2"
 }

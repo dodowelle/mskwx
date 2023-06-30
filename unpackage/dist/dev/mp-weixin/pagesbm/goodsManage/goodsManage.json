@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "总部商品管理",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "page-head": "/components/page-head/page-head",
+    "uni-search-bar": "/uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar",
+    "u-image": "/uview/components/u-image/u-image",
+    "edit-modal": "/pagesbm/goodsManage/component/editModal"
+  }
+}

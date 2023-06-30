@@ -1,0 +1,19 @@
+
+.empty.data-v-6fdeffb0 {
+		text-align: center;
+		padding: 24rpx;
+    display: table-row;
+    height: 220rpx;
+}
+.no_img.data-v-6fdeffb0 {
+    width: 200rpx;
+    height: 200rpx;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+}
+.text.data-v-6fdeffb0 {
+    font-size: 24rpx;
+}
+

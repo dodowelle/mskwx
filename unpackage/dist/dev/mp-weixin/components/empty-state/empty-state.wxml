@@ -1,0 +1,1 @@
+<view class="empty data-v-6fdeffb0"><image class="no_img data-v-6fdeffb0" src="/static/images/empty.png" mode="aspectFill"></image><block wx:if="{{description}}"><view class="text data-v-6fdeffb0">{{description}}</view></block></view>

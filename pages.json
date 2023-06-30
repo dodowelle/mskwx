@@ -1,43 +1,154 @@
 {
-	"pages": [
-		{
-			"path": "pages/index/index",
-			"needLogin": false,
-			"test": 123,
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
-		},
-		{
-			"path": "pages/realList/realList",
-			"style": {
-				"navigationBarTitleText": "实时看板",
-				"enablePullDownRefresh": false
-			}
-		},
-		{
-			"path": "pages/businessTarget/businessTarget",
-			"style": {
-				"navigationBarTitleText": "目标看板",
-				"enablePullDownRefresh": false
-			}
-		}
-	],
-	"globalStyle": {
-		"autoscan": true,
-		"navigationStyle": "custom",
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8",
-		"app-plus": {
-			"background": "#efeff4"
-		}
-	},
-	"easycom": {
-		"autoscan": true,
-		"custom": {
-			"fui-(.*)": "@/components/firstui/fui-$1/fui-$1.vue"
-		}
-	}
+    "pages": [
+        {
+            "path": "pages/index/index",
+            "name": "门店选择",
+            "needLogin": false,
+            "style": {
+                "navigationBarTitleText": "选择门店"
+            }
+        }
+    ],
+    "subPackages": [
+        {
+            "root": "scpages",
+            "name": "营业统计",
+            "pages": [
+                {
+                    "path": "realList/realList",
+                    "style": {
+                        "navigationBarTitleText": "实时看板",
+                        "enablePullDownRefresh": false
+                    }
+                },
+                {
+                    "path": "businessStatistic/businessStatistic",
+                    "style": {
+                        "navigationBarTitleText": "统计营业",
+                        "enablePullDownRefresh": false
+                    }
+                },
+                {
+                    "path": "businessTarget/businessTarget",
+                    "style": {
+                        "navigationBarTitleText": "目标看板",
+                        "enablePullDownRefresh": false
+                    }
+                },
+                {
+                    "path": "businessHotShop/businessHotShop",
+                    "style": {
+                        "navigationBarTitleText": "门店风云榜",
+                        "enablePullDownRefresh": false
+                    }
+                },
+                {
+                    "path": "batchSetTarget/batchSetTarget",
+                    "style": {
+                        "navigationBarTitleText": "批量设置目标",
+                        "enablePullDownRefresh": false
+                    },
+                    "hidden": true
+                },
+                {
+                    "path": "selectTags/selectTags",
+                    "style": {
+                        "navigationBarTitleText": "选择指标",
+                        "enablePullDownRefresh": false
+                    },
+                    "hidden": true
+                }
+            ]
+        },
+        {
+            "root": "pagesbm",
+            "name": "品牌管理",
+            "pages": [
+                {
+                    "path": "accountManage/accountManage",
+                    "style": {
+                        "navigationBarTitleText": "平台账号管理2",
+                        "enablePullDownRefresh": false
+                    }
+                },
+                {
+                    "path": "goodsManage/goodsManage",
+                    "style": {
+                        "navigationBarTitleText": "总部商品管理",
+                        "enablePullDownRefresh": false
+                    }
+                },
+                {
+                    "path": "menuManage/menuManage",
+                    "style": {
+                        "navigationBarTitleText": "门店菜单管理",
+                        "enablePullDownRefresh": false
+                    },
+                    "hidden": true
+                },
+                {
+                    "path": "addGoods/addGoods",
+                    "style": {
+                        "navigationBarTitleText": "添加商品",
+                        "enablePullDownRefresh": false
+                    },
+                    "hidden": true
+                },
+                {
+                    "path": "patchSet/patchSet",
+                    "style": {
+                        "navigationBarTitleText": "批量新增/修改",
+                        "enablePullDownRefresh": false
+                    },
+                    "hidden": true
+                }
+                
+            ]
+        },
+        {
+            "root": "pagesex",
+            "name": "异常监控",
+            "pages": [
+                {
+                    "path": "storeException/storeException",
+                    "style": {
+                        "navigationBarTitleText": "门店监控",
+                        "enablePullDownRefresh": false
+                    }
+                },
+                {
+                    "path": "dishes/dishes",
+                    "style": {
+                        "navigationBarTitleText": "菜品监控",
+                        "enablePullDownRefresh": false
+                    }
+                },
+                {
+                    "path": "setCoreDishes/setCoreDishes",
+                    "style": {
+                        "navigationBarTitleText": "设置核心菜品",
+                        "enablePullDownRefresh": false
+                    },
+                    "hidden": true
+                }
+            ]
+        }
+        
+    ],
+    "globalStyle": {
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "uni-app",
+        "navigationBarBackgroundColor": "#F8F8F8",
+        "backgroundColor": "#F8F8F8",
+        "app-plus": {
+            "background": "#efeff4"
+        }
+    },
+    "easycom": {
+        "autoscan": true,
+        "custom": {
+            "u-(.*)": "@/uview/components/u-$1/u-$1.vue"
+        }
+    }
 }

@@ -1,17 +1,22 @@
+@charset "UTF-8";
 /* 水平间距 */
 /* 水平间距 */
-.select_wrapper.data-v-2d2ecdae {
-  margin-top: 20rpx;
+.data-v-e6d27b28:deep(.u-field) {
+  padding: 24rpx 0;
+}
+.select_wrapper.data-v-e6d27b28 {
   display: flex;
   align-items: center;
-  padding: 0 24rpx;
-  width: 400rpx;
+  padding: 0;
+  width: 360rpx;
+  margin-left: -20rpx;
 }
-.select_wrapper .store_icon.data-v-2d2ecdae {
+.select_wrapper .store_icon.data-v-e6d27b28 {
   width: 34rpx;
   height: 34rpx;
 }
-.select_wrapper.data-v-2d2ecdae .selected-item .text-color {
+.select_wrapper :deep(.selected-item) .text-color.data-v-e6d27b28 {
   font-size: 28rpx;
   font-weight: 600;
 }
+

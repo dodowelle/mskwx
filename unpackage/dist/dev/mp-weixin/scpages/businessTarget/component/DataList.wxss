@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+.text.data-v-01bda9bf {
+  font-size: 28rpx;
+}
+.flex-center.data-v-01bda9bf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

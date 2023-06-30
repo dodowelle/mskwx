@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+.data-v-f0d7f5d4:export {
+  activeColor: #D92B34;
+}
+.cbox.data-v-f0d7f5d4 {
+  margin: 24rpx;
+  padding: 24rpx;
+  background-color: #fff;
+  border-radius: 16rpx;
+  min-height: 200rpx;
+}
+.rank_top.data-v-f0d7f5d4 {
+  background-color: #fff;
+}
+.date_update.data-v-f0d7f5d4 {
+  padding: 24rpx 24rpx 0;
+}
+.date_num.data-v-f0d7f5d4 {
+  color: rgba(0, 0, 0, 0.85);
+}
+.scroll_tab.data-v-f0d7f5d4 {
+  background-color: #fff;
+}
+.scroll-view_H.data-v-f0d7f5d4 {
+  white-space: nowrap;
+  width: 100%;
+}
+.scroll-view-item.data-v-f0d7f5d4 {
+  height: 300rpx;
+  line-height: 300rpx;
+  text-align: center;
+  font-size: 36rpx;
+}
+.scroll-view-item_H.data-v-f0d7f5d4 {
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: fit-content;
+  text-align: center;
+  font-size: 36rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  background: #f5f6fa;
+  border-radius: 4rpx;
+  padding: 0 24rpx;
+  margin: 30rpx 8rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+.tab_wrapper.data-v-f0d7f5d4 {
+  padding: 0 16rpx;
+}
+.tab_item.active.data-v-f0d7f5d4 {
+  background-color: #D92B34;
+  color: #fff;
+}
+

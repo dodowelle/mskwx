@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "添加商品",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "page-head": "/components/page-head/page-head",
+    "u-form": "/uview/components/u-form/u-form",
+    "u-form-item": "/uview/components/u-form-item/u-form-item",
+    "u-input": "/uview/components/u-input/u-input",
+    "u-select": "/uview/components/u-select/u-select"
+  }
+}

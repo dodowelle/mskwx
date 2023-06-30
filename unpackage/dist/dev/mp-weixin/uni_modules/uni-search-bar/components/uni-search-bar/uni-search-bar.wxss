@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* 水平间距 */
 /* 水平间距 */
 .uni-searchbar {
@@ -47,3 +48,4 @@
   font-size: 14px;
   color: #333333;
 }
+

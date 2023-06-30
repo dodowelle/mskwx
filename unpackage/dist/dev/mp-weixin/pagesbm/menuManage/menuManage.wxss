@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+.setlink.data-v-8e372c5e {
+  color: #2A82E4;
+}
+.select_outer.data-v-8e372c5e {
+  background-color: #fff;
+  padding: 20rpx;
+}
+.select_wrap.data-v-8e372c5e {
+  width: 228rpx;
+  border: 1px solid #efefef;
+}
+.data-v-8e372c5e .select_wrap .u-field {
+  padding: 12rpx 28rpx;
+}
+

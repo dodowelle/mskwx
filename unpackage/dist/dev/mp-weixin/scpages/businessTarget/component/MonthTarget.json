@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "pie-chart": "/scpages/businessTarget/component/PieChart"
+  }
+}

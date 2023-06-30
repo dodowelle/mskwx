@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "批量设置目标",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "page-head": "/components/page-head/page-head",
+    "u-input": "/uview/components/u-input/u-input",
+    "u-calendar": "/uview/components/u-calendar/u-calendar",
+    "upload-file": "/components/upload-file/upload-file",
+    "u-field": "/uview/components/u-field/u-field"
+  }
+}

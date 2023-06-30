@@ -1,56 +1,47 @@
 
 const routes = [
 	{
-		name: "storeChoose",
+		name: "pages",
 		path: "",
 		hidden: false,
 		redirect: "noRedirect",
 		alwaysShow: true,
-		meta: {
+		style: {
 			id: 1,
-			title: "门店选择",
+			navigationBarTitleText: "门店选择",
 			icon: "icon-shujudaping",
 			noCache: false,
 			link: null,
 		},
-		children: [{
-			name: "storeChoose1",
-			path: "/pages/index/index",
-			hidden: false,
-			meta: {
-				title: '选择门店',
-				icon: ''
-			}
-		}],
+		children: [],
 	},
 	{
-		name: "storeChoose",
+		name: "scpages",
 		path: '',
 		hidden: false,
-		meta: {
-			title: "营业统计",
+		style: {
+			navigationBarTitleText: "营业统计",
 			icon: "icon-gongneng_yingyetongji",
 		},
-		children: [
-			{
-				name: "BusinessRealList",
-				path: "/pages/realList/realList",
-				hidden: false,
-				meta: {
-					title: '实时看板',
-					icon: ''
-				}
-			},
-			{
-				name: "BusinessTarget",
-				path: "/pages/businessTarget/businessTarget",
-				hidden: false,
-				meta: {
-					title: '目标看板',
-					icon: ''
-				}
-			}
-		]
+		children: []
+	}, {
+		name: "pagesex",
+		path: '',
+		hidden: false,
+		style: {
+			navigationBarTitleText: "异常监控",
+			icon: "icon-yichangjiankong",
+		},
+		children: []
+	},{
+		name: "pagesbm",
+		path: '',
+		hidden: false,
+		style: {
+			navigationBarTitleText: "品牌管理",
+			icon: "icon-caipin",
+		},
+		children: []
 	}
 ]
 

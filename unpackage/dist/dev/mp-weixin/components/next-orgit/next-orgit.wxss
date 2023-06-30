@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* 水平间距 */
 /* 水平间距 */
 .container {
@@ -43,3 +44,4 @@
 .list .org_btn::after {
   border: none;
 }
+

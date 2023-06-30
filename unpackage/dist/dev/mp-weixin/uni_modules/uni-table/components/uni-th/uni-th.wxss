@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* 水平间距 */
 /* 水平间距 */
 .uni-table-th {
@@ -34,28 +35,31 @@
   top: 3px;
 }
 .down ::after {
-  content: "";
+  content: '';
   width: 8px;
   height: 8px;
   position: absolute;
   left: 2px;
   top: -5px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
   background-color: #ccc;
 }
 .down.active ::after {
-  background-color: #2979ff;
+  background-color: #D92B34;
 }
 .up ::after {
-  content: "";
+  content: '';
   width: 8px;
   height: 8px;
   position: absolute;
   left: 2px;
   top: 5px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
   background-color: #ccc;
 }
 .up.active ::after {
-  background-color: #2979ff;
+  background-color: #D92B34;
 }
+

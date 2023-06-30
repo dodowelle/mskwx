@@ -1,0 +1,78 @@
+@import '@/assets/styles/variable.scss';
+.toptab {
+	background-color: #fff;
+	margin-bottom: 24rpx;
+}
+.tab_wrapper {
+	width: 100%;
+	height: 88rpx;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	border-bottom: 1px solid #eee;
+	.tab_item {
+		line-height: 88rpx;
+		color: rgba(0,0,0,0.45);
+		transition: 300ms;
+		.text {
+			font-size: 28rpx;
+			font-weight: 600;
+		}
+		&.active {
+			color: $red;
+			position: relative;
+			&::after {
+				content: '';
+				display: block;
+				position: absolute;
+				bottom: 0;
+				height: 4rpx;
+				width: 100%;
+				background-color: $red;
+			}
+		}
+	}
+}
+
+.select_wrapper {
+	display: flex;
+	align-items: center;
+	padding: 0 24rpx;
+	width: 400rpx;
+	.store_icon {
+		width: 34rpx;
+		height: 34rpx;
+	}
+	:deep(.selected-item) {
+		.text-color {
+			font-size: 28rpx;
+			font-weight: 600;
+		}
+	}
+}
+
+:deep(.uni-select__input-text) {
+	font-size: 28rpx;
+}
+
+.select2 {
+	width: 700rpx;
+	justify-content: space-between;
+	position: relative;
+	.selin {
+		width: 275rpx;
+	}
+	:deep(.uni-select) {
+		border:none;
+		padding-left: 0;
+	}
+}
+.gap {
+	position: absolute;
+	margin-left: 50%;
+	transform: translate(-50%);
+	display: block;
+}
+.content {
+	background-color: #F5F6FA;
+}

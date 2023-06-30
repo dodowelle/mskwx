@@ -3,12 +3,12 @@
 		<view :class="['nav_item', isActiveItem ? 'active_item':'']">
 			<template v-if="hasShowingChild(item.children, item)">
 				<view @click="handClick(item)">
-					<text :class="['iconfont', item.meta.icon ||'', isActive ? 'icon_active':''] "></text> {{item.meta.title}}
+					<text :class="['iconfont', item.style.icon ||'', isActive ? 'icon_active':''] "></text> {{item.style.navigationBarTitleText}}
 					<text class="iconfont arro">{{isActive ? '&#xe62d;':'&#xe631;'}}</text>
 				</view>
 			</template>
 			<view v-else @click="handClick2(item)">
-				<text :class="['iconfont', item.meta.icon ||'', isActive ? 'icon_active':''] "></text> {{item.meta.title}}
+				<text :class="['iconfont', item.style.icon ||'', isActive ? 'icon_active':''] "></text> {{item.style.navigationBarTitleText}}
 			</view>
 		</view>
 		<template v-if="item.children && isActive">
@@ -25,8 +25,6 @@
 
 <script>
 	import ChildItem from './child-item.vue';
-	import {useAppStore} from '@/store/index.js';
-	const store = useAppStore();
 	export default {
 		props: {
 			item: {
@@ -48,28 +46,26 @@
 		},
 		computed : {
 			isActive () {
-				return store.clickedNav === this.item.meta.title
+				return this.$store.state.clickedNav === this.item.style.navigationBarTitleText
 			},
 			isActiveItem () {
-				return store.activeItem === this.item.meta.title
+				return this.$store.state.activeItem === this.item.style.navigationBarTitleText
 			}
 		},
 		methods: {
 			handClick (item) {
-				console.log('handClick', item.name)
-				if(store.clickedNav === item.meta.title) {
-					store.setClickedNav('')
+				if(this.$store.state.clickedNav === item.style.navigationBarTitleText) {
+					this.$store.commit('setClickedNav', '')
 				} else {
-					store.setClickedNav(item.meta.title)
+					this.$store.commit('setClickedNav',item.style.navigationBarTitleText)
 				}
 			},
 			handClick2 (item) {
-				console.log('handClick2', item.name)
-				if(store.activeItem === this.item.meta.title) {
+				if(this.$store.state.activeItem === this.item.style.navigationBarTitleText) {
 					
 				} else {
-					store.setActiveItem(item.meta.title)
-					uni.navigateTo({
+					this.$store.commit('setActiveItem', item.style.navigationBarTitleText)
+					uni.redirectTo({
 						url:item.path
 					}) 
 				}

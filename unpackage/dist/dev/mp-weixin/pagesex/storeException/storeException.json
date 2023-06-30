@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "门店监控",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "page-head": "/components/page-head/page-head",
+    "u-tabs-swiper": "/uview/components/u-tabs-swiper/u-tabs-swiper",
+    "panel-select": "/components/panel-select/panel-select",
+    "cho-btns": "/components/cho-btns/cho-btns",
+    "today-store": "/pagesex/storeException/component/todayStore",
+    "monitoring-report": "/pagesex/storeException/component/monitoringReport",
+    "handle-exception": "/pagesex/storeException/component/handleException",
+    "set-monitoring": "/pagesex/storeException/component/setMonitoring"
+  }
+}

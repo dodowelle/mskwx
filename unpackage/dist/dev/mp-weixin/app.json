@@ -1,11 +1,42 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/realList/realList",
-    "pages/businessTarget/businessTarget"
+    "pages/index/index"
+  ],
+  "subPackages": [
+    {
+      "root": "scpages",
+      "pages": [
+        "realList/realList",
+        "businessStatistic/businessStatistic",
+        "businessTarget/businessTarget",
+        "businessHotShop/businessHotShop",
+        "batchSetTarget/batchSetTarget",
+        "selectTags/selectTags"
+      ],
+      "name": "营业统计"
+    },
+    {
+      "root": "pagesbm",
+      "pages": [
+        "accountManage/accountManage",
+        "goodsManage/goodsManage",
+        "menuManage/menuManage",
+        "addGoods/addGoods",
+        "patchSet/patchSet"
+      ],
+      "name": "品牌管理"
+    },
+    {
+      "root": "pagesex",
+      "pages": [
+        "storeException/storeException",
+        "dishes/dishes",
+        "setCoreDishes/setCoreDishes"
+      ],
+      "name": "异常监控"
+    }
   ],
   "window": {
-    "autoscan": true,
     "navigationStyle": "custom",
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",

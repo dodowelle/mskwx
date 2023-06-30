@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "shop-select": "/components/shop-select/shop-select",
+    "panel-select": "/components/panel-select/panel-select",
+    "data-select": "/components/data-select/data-select"
+  }
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* 水平间距 */
 /* 水平间距 */
 .uni-table-tr {
@@ -19,3 +20,4 @@
 .tr-table--border {
   border-right: 1px #ebeef5 solid;
 }
+

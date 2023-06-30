@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "平台账号管理2",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "page-head": "/components/page-head/page-head",
+    "uni-search-bar": "/uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar",
+    "data-select": "/components/data-select/data-select"
+  }
+}

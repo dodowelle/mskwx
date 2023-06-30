@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+.innerform.data-v-182d1fdf {
+  padding: 20rpx;
+}
+.btns.data-v-182d1fdf {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 14rpx;
+}
+.btn.data-v-182d1fdf {
+  width: 307rpx;
+  height: 72rpx;
+  background: #F5F6FA;
+  border-radius: 4rpx;
+  margin: 0 12rpx;
+  text-align: center;
+  font-size: 24rpx;
+  line-height: 72rpx;
+}
+.confirmbtn.data-v-182d1fdf {
+  background-color: #D92B34;
+  color: #fff;
+}
+
